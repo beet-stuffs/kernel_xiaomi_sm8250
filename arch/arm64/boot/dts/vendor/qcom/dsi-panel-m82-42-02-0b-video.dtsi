@@ -72,7 +72,7 @@
        qcom,mdss-dsi-pan-enable-dynamic-fps;
       qcom,mdss-dsi-pan-fps-update =
                "dfps_immediate_porch_mode_vfp";
-       qcom,dsi-supported-dfps-list = <120 144 90 60>;
+       qcom,dsi-supported-dfps-list = <120 144 60>;
 
         qcom,mdss-dsi-display-timings {
             timing@0{
@@ -362,12 +362,6 @@
                         39 00 00 00 00 00 02 B3 80
                         39 01 00 00 00 00 02 B2 00
                         ];
-                 qcom,mdss-dsi-dispparam-pen-90hz-command = [
-                        39 00 00 00 00 00 02 FF 10
-                        39 00 00 00 00 00 02 FB 01
-                        39 00 00 00 00 00 02 B3 80
-                        39 01 00 00 00 00 02 B2 00
-                        ];
                 mi,mdss-dsi-dispparam-pen-clear-command = [
                         39 00 00 00 00 00 02 FF 10
                         39 00 00 00 00 00 02 FB 01
@@ -377,7 +371,6 @@
                 qcom,mdss-dsi-dispparam-pen-60hz-command-state = "dsi_lp_mode";
                 qcom,mdss-dsi-dispparam-pen-30hz-command-state = "dsi_lp_mode";
                 qcom,mdss-dsi-dispparam-pen-144hz-command-state = "dsi_lp_mode";
-                qcom,mdss-dsi-dispparam-pen-90hz-command-state = "dsi_lp_mode";
                 qcom,mdss-dsi-dispparam-pen-48hz-command-state = "dsi_lp_mode";
                 qcom,mdss-dsi-dispparam-pen-50hz-command-state = "dsi_lp_mode";
                 mi,mdss-dsi-dispparam-pen-clear-command-state = "dsi_lp_mode";
